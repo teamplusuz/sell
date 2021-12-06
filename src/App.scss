@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.grotesk {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+@mixin mask($url) {
+    mask-image: url($url);
+    -webkit-mask-image: url($url);
+}
+
+$c-000000a6: #000000a6; // rgba(0,0,0,0.65)
+$c-000000f2: #000000f2; // rgba(0,0,0,0.95)
+$c-dc3545: #dc3545;
+$c-dee2e6: #dee2e6;
+
+$fs-64: 64px;
+$fs-48: 48px;
+$fs-46: 46px;
+$fs-42: 42px;
+$fs-38: 38px;
+$fs-36: 36px;
+$fs-35: 35px;
+$fs-32: 32px;
+$fs-30: 30px;
+$fs-28: 28px;
+$fs-25: 25px;
+$fs-24: 24px;
+$fs-22: 22px;
+$fs-21: 21px;
+$fs-20: 20px;
+$fs-19: 19px;
+$fs-18: 18px;
+$fs-17: 17px;
+$fs-16: 16px;
+$fs-15: 15px;
+$fs-14: 14px;
+$fs-13: 13px;
+$fs-12: 12px;
+
+$p-thin: 100;
+$p-light: 300;
+$p-regular: 400;
+$p-medium: 500;
+$p-semi-bold: 600;
+$p-bold: 700;
+$p-extra-bold: 800;
+$p-black: 900;
+
+a {
+    text-decoration: none !important;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    mask: {
+        size: 100%;
+        repeat: no-repeat;
+        position: top center;
+    }
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: top center;
+}
+
+.telegram {
+    @include mask('./svg/telegram.svg');
+}
+
+// color
+.c-000000a6 {
+    color: $c-000000a6 !important;
+}
+
+.c-000000f2 {
+    color: $c-000000f2 !important;
+}
+
+.c-dee2e6 {
+    color: $c-dee2e6 !important;
+}
+
+.text-gray-700 {
+    color: #495057 !important;
+}
+
+.text-gray-500 {
+    color: #adb5bd !important;
+}
+
+.text-gray-200 {
+    color: #e9ecef !important;
+}
+
+.c-white {
+    color: #fff !important;
+}
+
+.c-343a40 {
+    color: #343a40 !important;
+}
+
+.c-868e96 {
+    color: #868e96 !important;
+}
+
+.text-gray-300 {
+    color: #dee2e6 !important;
+}
+
+// bg-color
+.bgc-000000a6 {
+    background-color: $c-000000a6 !important;
+}
+
+.bgc-dee2e6 {
+    background-color: $c-dee2e6 !important;
+}
+
+.bgc-white {
+    background-color: #fff !important;
+}
+
+.bg-gray-200 {
+    background-color: #e9ecef !important;
+}
+
+// border
+.borr-20 {
+    border-radius: $fs-20 !important;
+}
+
+// font-size
+.fs-xl-64 {
+    font-size: 64px !important;
+}
+
+.fs-xl-20 {
+    font-size: $fs-20 !important;
+}
+
+.fs-xl-14 {
+    font-size: $fs-14 !important;
+}
+
+.fs-xl-12 {
+    font-size: $fs-12 !important;
+}
+
+.text-sm {
+    font-size: 0.7875rem;
+}
+
+.p-italic {
+    font-style: italic !important;
+}
+
+.p-thin {
+    font-weight: $p-thin !important;
+}
+
+.p-light {
+    font-weight: $p-light !important;
+}
+
+.p-regular {
+    font-weight: $p-regular !important;
+}
+
+.p-medium {
+    font-weight: $p-medium !important;
+}
+
+.p-semi-bold {
+    font-weight: $p-semi-bold !important;
+}
+
+.p-bold {
+    font-weight: $p-bold !important;
+}
+
+.p-extra-bold {
+    font-weight: $p-extra-bold !important;
+}
+
+.p-black {
+    font-weight: $p-black !important;
+}
+
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.z-9999 {
+    z-index: 9999 !important;
+}
+
+#footer {
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+
+    .fs-lg-42 {
+        font-size: 42px !important;
+    }
+
+    .bg-gray-100 {
+        background-color: #f8f9fa !important;
+    }
+
+    @media (max-width: 767px) {
+        .py-6 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+        }
+    }
+}
