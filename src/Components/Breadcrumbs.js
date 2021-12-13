@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import './general.scss'
 
-export const Breadcrumbs = ({ title1, title2, link1, center }) => {
+export const Breadcrumbs = ({ title1, title2, link1, center, className }) => {
     return (
-        <div id='breadcrumbs' className={`d-flex ${center ? 'justify-content-center' : ''}`}>
+        <div
+            id='breadcrumbs'
+            className={`d-flex ${center ? 'justify-content-center' : ''} ${className}`}
+        >
             <div>
                 <Link to='/' className='title text-dark'>
                     Home

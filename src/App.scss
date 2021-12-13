@@ -127,6 +127,10 @@ a {
     background-color: #e9ecef !important;
 }
 
+.bg-gray-700 {
+    background-color: #495057 !important;
+}
+
 // border
 .borr-20 {
     border-radius: $fs-20 !important;
@@ -135,6 +139,10 @@ a {
 // font-size
 .fs-xl-64 {
     font-size: 64px !important;
+}
+
+.fs-xl-30 {
+    font-size: $fs-30 !important;
 }
 
 .fs-xl-20 {
@@ -220,5 +228,12 @@ a {
             padding-top: 2rem !important;
             padding-bottom: 2rem !important;
         }
+    }
+}
+
+#contact {
+    .hero-header {
+        letter-spacing: 0.2em;
+        margin-bottom: 2rem;
     }
 }

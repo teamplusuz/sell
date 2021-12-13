@@ -1,0 +1,15 @@
+#header {
+    .bg-primary-light {
+        background-color: #d6eafa;
+    }
+
+    .icon-rounded {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        color: #fff;
+    }
+}

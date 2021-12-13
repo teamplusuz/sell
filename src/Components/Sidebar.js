@@ -62,7 +62,7 @@ export const Sidebar = () => {
                                 <i className='far fa-user-circle h5' />
                             </Link>
                             <div
-                                className='text-dark h5 position-relative'
+                                className='text-dark h5 position-relative cursor-pointer'
                                 onClick={() => setShow(!show)}
                             >
                                 <i className='fas fa-cart-arrow-down' />
@@ -124,7 +124,7 @@ export const Sidebar = () => {
                     </div>
                     <div className='d-flex justify-content-between text-uppercase'>
                         <Link
-                            to='/'
+                            to='/cart'
                             className='btn btn-link text-dark me-3 rounded-0'
                             onClick={() => setShow(!show)}
                         >
@@ -132,7 +132,7 @@ export const Sidebar = () => {
                             <i className='fa fa-arrow-right' />
                         </Link>
                         <Link
-                            to='/'
+                            to='/checkout/address'
                             className='btn btn-outline-dark rounded-0'
                             onClick={() => setShow(!show)}
                         >
